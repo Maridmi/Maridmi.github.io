@@ -16,7 +16,7 @@
 <body>
 
     <div class="topnav so-row">
-        <a href="/"><img src="img/navlogo.png"></a>
+        <a href="/"><img src="img/navlogo.svg"></a>
         <div class="navlist">
             <a href="/work">work</a>
             <a href="/services">services</a>
@@ -25,26 +25,60 @@
     </div>
 
     <div class="greetings so-row">
-        <h1>Hi, I'm Marina. <br>I design <span>digital products </span>that help business to grow.</h1>
+        <h1 id="show-invisible">Hi, I'm Marina. <br>I design <span>digital products </span>that help business to grow.</h1>
+        <p id="invisible">scroll down</p>
     </div>
     
-    <div class="works">
-        <div class="work">
-            <a href="/fanci"><img src="img/fanci/6.jpg"></a>
-        </div>
+    <div class="latest">
+        <a href="/fanci">
+            <img src="img/fanci/6.jpg">
+            <div class="overlay"></div>
+            <div class="latest-desc">
+                <ul><li>Latest project</li></ul>
+                <div class="latest-name">
+                    <h2 id="show-invisible">Fanci Branding Guidelines</h2>
+                    <p id="invisible">explore</p>
+                </div>
+            </div>
+        </a>
     </div>
 
-    <div class="advantages so-row">
-        <div class="advantages-text">
-            <h2>Why is design <span>important</span></h2>
-            <p class="advantages-p">Hello world</p>
+    <div class="advantages">
+        <div class="advantages-text so-row">
+            <h2>Why design <span>matters</span></h2>
+            <p class="advantages-p">Good design serves a purpose, communicates a message, and is aesthetically pleasing at the same time. Design is everywhere and that's why it's important to make it good. <br><br>My mission is to find design solutions that help achieve the goals of clients and, ultimately, grow the business.</p>
         </div>
 
         <div class="brands">
-
+            <div class="logos">
+                <img src="img/brands/domstroy.png">
+                <img src="img/brands/aes.png">
+                <img style="width: 75px;" src="img/brands/assistent.png">
+                <img src="img/brands/sharing.png">
+                <img src="img/brands/cls.png">
+                <img style="width: 220px;" src="img/brands/fanci.png">
+                <img src="img/brands/avansbox.png">
+                <img src="img/brands/medical.png">
+                <img style="width: 90px;" src="img/brands/diar.png">
+                <!-- <img src="img/brands/otoplenych.png">
+                <img src="img/brands/zaborsk.png"> -->
+            </div>
+            <div class="logos">
+                <img src="img/brands/domstroy.png">
+                <img src="img/brands/aes.png">
+                <img style="width: 75px;" src="img/brands/assistent.png">
+                <img src="img/brands/sharing.png">
+                <img src="img/brands/cls.png">
+                <img style="width: 220px;" src="img/brands/fanci.png">
+                <img src="img/brands/avansbox.png">
+                <img src="img/brands/medical.png">
+                <img style="width: 90px;" src="img/brands/diar.png">
+                <!-- <img src="img/brands/otoplenych.png">
+                <img src="img/brands/zaborsk.png"> -->
+            </div>
         </div>
 
-        <div class="more-works">
+        <div class="more-works so-row">
             <div class="more-works-card">
                 <a href="/assistent">
                     <img src="img/assistent/1.jpg">
@@ -71,29 +105,49 @@
     <div class="services so-row">
         <div class="services-text">
             <h2>Services <span>I do offer</span></h2>
-            <p class="services-p">Hello world</p>
+            <p class="services-p">Some of the fields in which I stand out are UI/UX, branding, graphic and editorial design. I love clean typography, white spaces and minimalism. <br><br>If you're a startup looking for a designer or have some interesting ideas in mind, get in touch.</p>
         </div>
 
         <div class="services-cards">
+            <a href="/work">
             <div class="card">
-                <p>01</p>
-                <h3>Web Design</h3>
+                <img src="img/web.png">
+                <div>
+                    <p>explore</p>
+                    <h3>Web Design</h3>
+                </div>
             </div>
+            </a>
 
+            <a href="/work">
             <div class="card">
-                <p>02</p>
-                <h3>Logo Design</h3>
+                <img src="img/logo.png">
+                <div>
+                    <p>explore</p>
+                    <h3>Logo Design</h3>
+                </div>
             </div>
+            </a>
 
+            <a href="/work">
             <div class="card">
-                <p>03</p>
-                <h3>Branding and Guideline</h3>
+                <img src="img/brand.png">
+                <div>
+                    <p>explore</p>
+                    <h3>Branding and Guideline</h3>
+                </div>
             </div>
+            </a>
 
+            <a href="/work">
             <div class="card">
-                <p>04</p>
-                <h3>Business Card, Brochure</h3>
+                <img src="img/card.png">
+                <div>
+                    <p>explore</p>
+                    <h3>Business Card, Brochure</h3>
+                </div>
             </div>
+            </a>
         </div>
     </div>
 
