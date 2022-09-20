@@ -36,8 +36,28 @@ a:hover {
     transition: .3s;
 }
 
-.so-row {
-    padding: 0 60px 0 60px;
+@media (min-width: 420px) {
+    .so-row {
+        padding: 0 60px 0 60px;
+    }
+
+    .navlist a {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .so-row {
+        padding: 0 20px 0 20px;
+    }
+
+    .navlist a {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 24px;
+    }
 }
 
 .annotation {
@@ -64,12 +84,6 @@ a:hover {
 .topnav a {
     color: #ffffff;
     margin-top: 12px;
-}
-
-.navlist a {
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: 24px;
 }
 
 .topnav a:hover {

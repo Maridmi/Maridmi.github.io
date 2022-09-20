@@ -21,56 +21,112 @@
     transition: .3s;
 }
 
-.foo-desc h1 {
-    font-size: 76px;
-    padding-bottom: 20px;
+@media (min-width: 420px) {
+    .foo-desc h1 {
+        font-size: 76px;
+        padding-bottom: 20px;
+    }
+
+    .foo-desc p {
+        font-size: 16px;
+        font-weight: 200;
+        opacity: .7;
+    }
+
+    .foo-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .foo-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foo-contact a {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .foo-links {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .foo-links p {
+        color: #7A7A7A;
+        font-size: 24px;
+    }
+
+    .foo-links-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .foo-links-row a {
+        margin: 10px 0 0 40px;
+        color: #D5D5D5;
+    }
 }
 
-.foo-desc p {
-    font-size: 16px;
-    font-weight: 200;
-    opacity: .7;
-}
+@media (max-width: 420px) {
+    .foo-desc h1 {
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
 
-.foo-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-}
+    .foo-desc p {
+        font-size: 14px;
+        font-weight: 200;
+    }
 
-.foo-contact {
-    display: flex;
-    flex-direction: column;
-}
+    .foo-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-.foo-contact a {
-    font-size: 30px;
-    margin-top: 20px;
-}
+    .foo-contact {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
 
-.foo-links {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-}
+    .foo-contact a {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 
-.foo-links p {
-    color: #7A7A7A;
-    font-size: 24px;
-}
+    .foo-links {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
-.foo-links-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 18px;
-}
+    .foo-links p {
+        color: #7A7A7A;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
 
-.foo-links-row a {
-    margin: 10px 0 0 40px;
-    color: #D5D5D5;
+    .foo-links-row {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .foo-links-row a {
+        margin: 15px 0 0 0;
+        color: #D5D5D5;
+    }
 }
 
 .copyright {
