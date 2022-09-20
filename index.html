@@ -10,9 +10,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
 </head>
+
 <body>
 
     <div class="topnav so-row">
@@ -25,7 +26,7 @@
     </div>
 
     <div class="greetings so-row">
-        <h1 id="show-invisible">Hi, I'm Marina. <br>I design <span>digital products </span>that help business to grow.</h1>
+        <h1 id="show-invisible">Hi, I'm Marina. <br>I design <span>digital products </span>that help businesses grow.</h1>
         <p id="invisible">scroll down</p>
     </div>
     
@@ -34,7 +35,7 @@
             <img src="img/fanci/6.jpg">
             <div class="overlay"></div>
             <div class="latest-desc">
-                <ul><li>Latest project</li></ul>
+                <p class="annotation">LATSET PROJECT</p>
                 <div class="latest-name">
                     <h2 id="show-invisible">Fanci Branding Guidelines</h2>
                     <p id="invisible">explore</p>
@@ -46,57 +47,77 @@
     <div class="advantages">
         <div class="advantages-text so-row">
             <h2>Why design <span>matters</span></h2>
-            <p class="advantages-p">Good design serves a purpose, communicates a message, and is aesthetically pleasing at the same time. Design is everywhere and that's why it's important to make it good. <br><br>My mission is to find design solutions that help achieve the goals of clients and, ultimately, grow the business.</p>
+            <!-- <h4>Good design serves a purpose</h4> -->
+
+            <div class="advantages-right">
+                <p>Good design serves a purpose, communicates a message, and is aesthetically pleasing at the same time. Design is everywhere and that's why it's important to make it good. <br><br>My mission is to find design solutions that help to achieve the goals of clients and, ultimately, grow the business.</p>
+                <div class="advantages-button-cont">
+                    <a href="/works">
+                        <button class="advantages-button">VIEW CASES</button>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="brands">
             <div class="logos">
                 <img src="img/brands/domstroy.png">
                 <img src="img/brands/aes.png">
-                <img style="width: 75px;" src="img/brands/assistent.png">
+                <img style="width: 90px;" src="img/brands/assistent.png">
                 <img src="img/brands/sharing.png">
                 <img src="img/brands/cls.png">
                 <img style="width: 220px;" src="img/brands/fanci.png">
                 <img src="img/brands/avansbox.png">
                 <img src="img/brands/medical.png">
-                <img style="width: 90px;" src="img/brands/diar.png">
+                <img style="width: 100px;" src="img/brands/diar.png">
                 <!-- <img src="img/brands/otoplenych.png">
                 <img src="img/brands/zaborsk.png"> -->
             </div>
             <div class="logos">
                 <img src="img/brands/domstroy.png">
                 <img src="img/brands/aes.png">
-                <img style="width: 75px;" src="img/brands/assistent.png">
+                <img style="width: 90px;" src="img/brands/assistent.png">
                 <img src="img/brands/sharing.png">
                 <img src="img/brands/cls.png">
                 <img style="width: 220px;" src="img/brands/fanci.png">
                 <img src="img/brands/avansbox.png">
                 <img src="img/brands/medical.png">
-                <img style="width: 90px;" src="img/brands/diar.png">
+                <img style="width: 100px;" src="img/brands/diar.png">
                 <!-- <img src="img/brands/otoplenych.png">
                 <img src="img/brands/zaborsk.png"> -->
             </div>
         </div>
 
         <div class="more-works so-row">
-            <div class="more-works-card">
-                <a href="/assistent">
-                    <img src="img/assistent/1.jpg">
-                </a>
-                <div class="more-works-text">
-                    <p>UI/UX</p>
-                    <a href="/assistent"><h3>Assistent Plus</h3></a>
+            <p class="annotation">EXPLORE SOME OF MY CASE STUDIES</p>
+
+            <div class="more-works-row">
+                <div class="more-works-card">
+                    <a href="/assistent">
+                        <img id="img1" src="img/assistent/1.jpg">
+                    </a>
+                    <div class="more-works-text">
+                        <p>UI/UX</p>
+                        <a href="/assistent"><h3>Assistent Plus</h3></a>
+                        <div class="view-case">
+                            <a href="/assistent">VIEW CASE
+                            <img src="img/arrow.svg"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </a>
-            
-            <div class="more-works-card">
-                <a href="/sharing">
-                    <img src="img/sharing/1.png">
-                </a>
-                <div class="more-works-text">
-                    <p>UI/UX</p>
-                    <a href="/sharing"><h3>Sharing Digital</h3></a>
+                
+                <div class="more-works-card">
+                    <a href="/sharing">
+                        <img id="img2" src="img/sharing/1.png">
+                    </a>
+                    <div class="more-works-text">
+                        <p>UI/UX</p>
+                        <a href="/sharing"><h3>Sharing Digital</h3></a>
+                        <div class="view-case">
+                            <a href="/sharing">VIEW CASE
+                            <img src="img/arrow.svg"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +126,7 @@
     <div class="services so-row">
         <div class="services-text">
             <h2>Services <span>I do offer</span></h2>
-            <p class="services-p">Some of the fields in which I stand out are UI/UX, branding, graphic and editorial design. I love clean typography, white spaces and minimalism. <br><br>If you're a startup looking for a designer or have some interesting ideas in mind, get in touch.</p>
+            <p class="services-p">Some of the fields in which I stand out are UI/UX, branding, graphic and editorial design. I love clean typography, white spaces and minimalism. <br><br>If you're a startup looking for a designer or have some interesting ideas in mind, <br>get in touch.</p>
         </div>
 
         <div class="services-cards">
@@ -113,7 +134,7 @@
             <div class="card">
                 <img src="img/web.png">
                 <div>
-                    <p>explore</p>
+                    <p>learn more</p>
                     <h3>Web Design</h3>
                 </div>
             </div>
@@ -123,7 +144,7 @@
             <div class="card">
                 <img src="img/logo.png">
                 <div>
-                    <p>explore</p>
+                    <p>learn more</p>
                     <h3>Logo Design</h3>
                 </div>
             </div>
@@ -133,8 +154,8 @@
             <div class="card">
                 <img src="img/brand.png">
                 <div>
-                    <p>explore</p>
-                    <h3>Branding and Guideline</h3>
+                    <p>learn more</p>
+                    <h3>Branding and Guidelines</h3>
                 </div>
             </div>
             </a>
@@ -143,11 +164,103 @@
             <div class="card">
                 <img src="img/card.png">
                 <div>
-                    <p>explore</p>
+                    <p>learn more</p>
                     <h3>Business Card, Brochure</h3>
                 </div>
             </div>
             </a>
+        </div>
+    </div>
+
+    <div class="explore-more so-row">
+        <p class="annotation">EXPLORE MORE</p>
+
+        <div class="explore-cont">
+
+
+            <div class="explore-work">
+                <hr>
+                <a href="/avansbox">
+                    <div id="exp-1" class="exp-1">
+                        <h1>Avansbox Web Design</h1>
+                        <h4>UI/UX</h4>
+                    </div>
+                    <img src="img/avansbox/6.jpg" class="follow-img-1">
+                </a>
+            </div>
+
+
+            <div class="explore-work">
+                <hr>
+                <a href="/cls">
+                    <div class="exp-2">
+                        <h1>CLS Branding Guidelines</h1>
+                        <h4>Branding</h4>
+                    </div>
+                    <img src="img/fanci/1.jpg" class="follow-img-2">
+                </a>
+            </div>
+
+            <div class="explore-work">
+                <hr>
+                <a href="/otoplenych">
+                    <div class="exp-3">
+                        <h1>Otoplenych Web Design</h1>
+                        <h4>UI/UX</h4>
+                    </div>
+                    <img src="img/sharing/1.png" class="follow-img-3">
+                </a>
+                <hr>
+            </div>
+        </div>
+
+        <div class="explore-button-cont">
+            <a href="/works">
+                <button class="explore-button">VIEW MORE</button>
+            </a>
+        </div>
+    </div>
+
+    <script language="JavaScript">
+        'use strict'
+
+        var cursor = document.querySelector(".follow-img-1");
+
+        document.addEventListener("mousemove", (e) => {
+
+        var x = e.clientX;
+        var y = e.clientY;
+
+        cursor.style.left = `${x}px`;
+        cursor.style.top = `${y}px`;
+        
+        })
+    </script>
+
+    <div class="footer so-row">
+        <div class="foo-desc">
+            <h1>Let's work together</h1>
+            <p>I design digital products that help <br>businesses grow.</p>
+        </div>
+
+        <div class="foo-info">
+            <div class="foo-contact">
+                <a href="mailto:yarova0marina@gmail.com">yarova0marina@gmail.com</a>
+                <a href="tel:+79110180255">+7 911 018 02 55</a>
+            </div>
+
+            <div class="foo-links">
+                <p>Saint Petersburg, Russia</p>
+                <div class="foo-links-row">
+                    <a href="https://www.behance.net/yarova0mar0675">Behance</a>
+                    <a href="">Dribble</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>2022 © Marina Orlova</p>
         </div>
     </div>
 

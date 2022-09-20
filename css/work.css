@@ -1,0 +1,120 @@
+/* <div class="w-container">
+        <div class="w-name">
+            <h3>works</h3>
+        </div>
+
+        <div class="w-works-all">
+            <div class="w-wide-card">
+                <a href="/assistent">
+                    <img id="img1" src="img/assistent/1.jpg">
+                </a>
+                <div class="w-works-text">
+                    <p>UI/UX</p>
+                    <a href="/assistent"><h3>Assistent Plus</h3></a>
+                    <div class="view-case">
+                        <a href="/assistent">VIEW CASE
+                        <img src="img/arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-cards">
+                <div class="w-small-card"> */
+
+.w-container {
+    padding-top: 30vh;
+}
+
+.w-name h3 {
+    font-size: 18px;
+    opacity: .6;
+    color: #151515;
+    margin-bottom: 10vh;
+}
+
+.w-works-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-wide-card {
+    width: 100%;
+}
+
+.w-wide-card .wide-img {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover; 
+    transition: .5;
+}
+
+.w-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.w-small-card {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.w-small-card .small-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; 
+    transition: .5;
+}
+
+.w-card {
+    margin-bottom: 35vh;
+}
+
+.w-card img:hover {
+    transition: .5;
+    opacity: .92;
+}
+
+.w-works-text {
+    padding-top: 60px;
+}
+
+.w-works-text p {
+    color: #151515;
+    font-size: 16px;
+    padding-bottom: 0;
+}
+
+.w-works-text h3 {
+    color: #151515;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.view-case {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.view-case a {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    transition: .3s;
+}
+
+.view-case img {
+    color: #151515;
+    width: 8px;
+    margin: 0 0 2px 5px;
+}
+
+.view-case a:hover {
+    opacity: .6;
+    transition: .3s;
+}
