@@ -548,3 +548,14 @@ a:hover .follow-img-1 {
     background-color: #2D2D2D;
     transition: .5s;
 }
+
+.case-images {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-images img {
+    width: 100vw;
+    height: 100%;
+}

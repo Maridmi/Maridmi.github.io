@@ -1,34 +1,10 @@
-/* <div class="w-container">
-        <div class="w-name">
-            <h3>works</h3>
-        </div>
-
-        <div class="w-works-all">
-            <div class="w-wide-card">
-                <a href="/assistent">
-                    <img id="img1" src="img/assistent/1.jpg">
-                </a>
-                <div class="w-works-text">
-                    <p>UI/UX</p>
-                    <a href="/assistent"><h3>Assistent Plus</h3></a>
-                    <div class="view-case">
-                        <a href="/assistent">VIEW CASE
-                        <img src="img/arrow.svg"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-cards">
-                <div class="w-small-card"> */
-
 .w-container {
     padding-top: 30vh;
 }
 
 .w-name h3 {
-    font-size: 18px;
-    opacity: .6;
-    color: #151515;
+    font-size: 16px;
+    color: #5f5f5f;
     margin-bottom: 10vh;
 }
 
