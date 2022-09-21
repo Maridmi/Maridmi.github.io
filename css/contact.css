@@ -29,6 +29,11 @@
         font-weight: 600;
         color: #151515;
     }
+
+    .contact-c a {
+        color: #151515;
+        font-size: 30px;
+    }
     
     .contact-get a {
         font-size: 160px;
@@ -72,8 +77,13 @@
         margin-top: 80px;
     }
 
+    .contact-c a {
+        color: #151515;
+        font-size: 26px;
+    }
+
     .contact-get a {
-        font-size: 70px;
+        font-size: 64px;
         border-bottom: 6px solid #151515;
     }
 }
@@ -90,11 +100,6 @@
     opacity: .4;
     font-size: 14px;
     margin-right: 20px;
-}
-
-.contact-c a {
-    color: #151515;
-    font-size: 30px;
 }
 
 .contact-c a:hover {

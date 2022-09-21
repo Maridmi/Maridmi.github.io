@@ -59,10 +59,14 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 420px) {  
+    .s-present {
+        padding-top: 20vh;
+    }
+
     .s-present h1 {
         width: 100%;
-        font-size: 56px;
+        font-size: 54px;
         align-self: flex-start;
         padding-bottom: 30px;
         color: #E6E2DD;
@@ -91,7 +95,7 @@
     }
 
     .s-stages-text h4 {
-        font-size: 26px;
+        font-size: 24px;
         color: #E6E2DD;
     }
 
@@ -198,7 +202,7 @@
         justify-content: space-between;
         align-items: flex-start;
         padding-top: 80px;
-        margin-bottom: 180px;
+        margin-bottom: 100px;
     }
 
     .s-all-text h2 {
@@ -253,7 +257,6 @@
 
     .s-card {
         width: 100%;
-        height: 50vh;
         border: 1px solid #262626;
         display: flex;
         flex-direction: column;
