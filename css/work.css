@@ -1,13 +1,13 @@
-.w-container {
-    padding-top: 30vh;
-}
-
 .w-works-all {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 420px) {
+    .w-container {
+        padding-top: 30vh;
+    }
+
     .w-name h3 {
         font-size: 16px;
         color: #5f5f5f;
@@ -52,9 +52,21 @@
     .w-works-text {
         padding-top: 60px;
     }
+
+    .w-works-text h3 {
+        color: #151515;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 420px) {
+    .w-container {
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+    }
+
     .w-name h3 {
         font-size: 16px;
         color: #5f5f5f;
@@ -100,6 +112,13 @@
     .w-works-text {
         padding-top: 30px;
     }
+
+    .w-works-text h3 {
+        color: #151515;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
 }
 
 .w-card img:hover {
@@ -111,13 +130,6 @@
     color: #151515;
     font-size: 16px;
     padding-bottom: 0;
-}
-
-.w-works-text h3 {
-    color: #151515;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 30px;
 }
 
 .view-case {

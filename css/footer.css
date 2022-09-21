@@ -4,7 +4,6 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100vw;
-    height: 85vh;
     background-color: #151515;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -22,6 +21,10 @@
 }
 
 @media (min-width: 420px) {
+    .footer {
+        height: 85vh;
+    }
+
     .foo-desc h1 {
         font-size: 76px;
         padding-bottom: 20px;
@@ -76,6 +79,10 @@
 }
 
 @media (max-width: 420px) {
+    .footer {
+        height: 90vh;
+    }
+    
     .foo-desc h1 {
         font-size: 42px;
         padding-bottom: 20px;
