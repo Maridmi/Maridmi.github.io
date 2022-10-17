@@ -277,7 +277,7 @@ a:hover {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 80px;
         margin-bottom: 25vh;
     }
 
@@ -303,11 +303,6 @@ a:hover {
         font-weight: 500;
         width: 100%;
         opacity: .8;
-    }
-
-    .advantages-button-cont {
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -378,7 +373,7 @@ a:hover {
 
 @media (max-width: 420px) {
     .brands img {
-        width: 90px !important;
+        width: 140px;
         opacity: .9;
         margin: 0 0 0 30px;
         display: inline-block;
@@ -599,7 +594,7 @@ a:hover {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 80px;
         margin-bottom: 120px;
     }
 
