@@ -20,7 +20,7 @@
     transition: .3s;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 460px) {
     .footer {
         height: 85vh;
     }
@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .footer {
         height: 90vh;
     }

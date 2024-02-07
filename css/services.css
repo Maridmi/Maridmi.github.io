@@ -17,7 +17,7 @@
     font-size: 20px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 460px) {
     .s-present {
         height: 80vh;
     }
@@ -62,7 +62,7 @@
     }
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 460px) { 
     .s-present {
         height: 100vh;
     }
@@ -175,7 +175,7 @@
     background-color: #F5F5F5;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 460px) {
     .s-all-text {
         display: flex;
         flex-direction: row;
@@ -202,7 +202,7 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .s-all-text {
         display: flex;
         flex-direction: column;
@@ -238,7 +238,7 @@
     padding-bottom: 160px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 460px) {
     .s-cards { 
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -257,7 +257,7 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .s-cards { 
         grid-template-columns: repeat(1, 1fr); 
     }
