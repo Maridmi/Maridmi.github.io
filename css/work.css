@@ -1,64 +1,116 @@
-.w-works-all {
+.filters {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.w-works {
+    display: grid;
+    gap: 80px 40px;
+    grid-template-columns: auto auto;
+    margin-bottom: 10vh;
+}
+
+.show {
+    display: block !important;
+}
+
+#myBtnContainer {
+    margin: 0 0 40px 0;
+}
+
+.btn {
+    border: none;
+    outline: none !important;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+    outline: none !important;
+}
+  
+.btn.active {
+    background-color: #666;
+    color: white;
+    outline: none !important;
+}
+
+.filters input {
+    height: 46px;
+    width: 30%;
 }
 
 @media (min-width: 460px) {
     .w-container {
-        padding-top: 30vh;
+        padding-top: 20vh;
     }
 
-    .w-name h3 {
-        font-size: 16px;
-        color: #5f5f5f;
-        margin-bottom: 10vh;
+    .w-name {
+        color: #151515;
+        font-size: 60px;
+        margin-bottom: 7vh;
     }
-
-    .w-wide-card {
+    
+    .w-card {
         width: 100%;
-    }
-
-    .w-wide-card .wide-img {
-        width: 100%;
-        height: 95vh;
-        object-fit: cover; 
-        transition: .5;
-    }
-
-    .w-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .w-small-card {
-        width: 48%;
         display: flex;
         flex-direction: column;
+        display: none;
+        position: relative;
     }
 
-    .w-small-card .small-img {
+    .w-img {
         width: 100%;
         height: 60vh;
         object-fit: cover; 
         transition: .5;
+        margin-bottom: 10px;
     }
 
-    .w-card {
-        margin-bottom: 28vh;
+    .w-card p {
+        background-color: rgb(213, 213, 213);
+        border: none;
     }
 
-    .w-works-text {
-        padding-top: 40px;
-    }
-
-    .w-works-text h3 {
+    .w-card h3 {
         color: #151515;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        line-height: 0.7;
     }
+
+.w-card figcaption {
+    position: absolute;
+    z-index: 1;
+    top: 30vh;
+    left: 50%;
+    padding: 5px 20px;
+    transform: translate(-50%, -50%);
+    line-height: 1.1em;
+    overflow: hidden;
+    height: 44px;
+}
+
+.w-card:hover figcaption,
+.w-card.hover figcaption {
+  background-color: #000000;
+}
+
+.w-card:hover .title,
+.w-card.hover .title {
+  transform: translateY(-150%);
+}
+
+.w-card:hover .hover,
+.w-card.hover .hover {
+  transform: translateY(-150%);
+}
+
 }
 
 @media (max-width: 460px) {
