@@ -814,6 +814,32 @@ a:hover .follow-img-1 {
     height: 100%;
 }
 
+.case-link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: #151515;
+}
+
+.case-a {
+    font-size: 2.8em;
+}
+
+.case-b {
+    font-size: 3.5em;
+}
+
+.case-link a {
+    color: #ffffff;
+}
+
+.case-link a:hover {
+    color: #c2c2c2;
+}
+
 
 
 /* ##################### FOOTER ############################### */
