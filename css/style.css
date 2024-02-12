@@ -815,29 +815,38 @@ a:hover .follow-img-1 {
 }
 
 .case-link {
+    position: fixed;
+    width: 100%;
+    bottom: 30px;
+    z-index: 100;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
-    width: 100%;
-    background-color: #151515;
 }
 
 .case-a {
-    font-size: 2.8em;
-}
-
-.case-b {
-    font-size: 3.5em;
+    font-size: 18px;
 }
 
 .case-link a {
-    color: #ffffff;
+    color: #0a0a0a;
+}
+
+.case-link button {
+    border: none;
+    background-color: #00ff95;
+    border-radius: 35px;
+    padding: 5px 20px;
+    transition: .3s;
+}
+
+.case-link button:hover {
+    background-color: #03ec8b;
 }
 
 .case-link a:hover {
-    color: #c2c2c2;
+    color: #000000;
 }
 
 
