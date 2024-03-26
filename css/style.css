@@ -18,12 +18,35 @@
     background: rgba(0,0,0,.0);
     color: #00ff95;
 }
+
+/* @font-face {
+    font-family: 'NeueMontreal-Bold';
+    src: url(fonts\NeueMontreal-Bold.woff) format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: url(fonts\NeueMontreal-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Light';
+    src: url(fonts\NeueMontreal-Light.woff) format('woff');
+} */
   
 body {
     overflow-x: hidden;
+    background-color: #FCFAF8;
 }
 
-h1, h2, h3, h4 {
+h1 {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+h2, h3, h4 {
     font-family: 'Inter', sans-serif;
     letter-spacing: -.04em;
     line-height: 1;
@@ -31,7 +54,7 @@ h1, h2, h3, h4 {
 
 p, a, li {
     font-family: 'Inter', sans-serif;
-    letter-spacing: -.06em;
+    letter-spacing: -.03em;
     line-height: 1.2;
 }
 
@@ -46,11 +69,20 @@ a:hover {
         padding: 0 60px 0 60px;
     }
 
-    .navlist a {
-        font-size: 20px;
-        font-weight: 500;
-        margin-left: 24px;
+    .navlist {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
+
+    .navlist a {
+        font-size: 18px;
+        margin: 0 30px 0 0;
+    }
+
+    
 }
 
 @media (max-width: 460px) {
@@ -60,9 +92,33 @@ a:hover {
 
     .navlist a {
         font-size: 16px;
-        font-weight: 500;
-        margin-left: 24px;
+        margin-left: 26px;
     }
+}
+
+.navlist select {
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0,0,0,.0);
+    outline: none;
+    border: none;
+    color: #757575;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#lang-switch option {
+    color: #000;
+    padding: 5px 20px;
+    background-color: #FCFAF8;
+    border: none;
+}
+
+#lang-switch option {
+    color: #000;
+    padding: 5px 20px;
+    background-color: #FCFAF8;
+    border: none;
 }
 
 .annotation {
@@ -73,10 +129,10 @@ a:hover {
 
 .topnav {
     width: 100vw;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 15px;
     position: fixed;
     z-index: 1;
     mix-blend-mode: difference;
@@ -88,18 +144,18 @@ a:hover {
 
 .topnav a {
     color: #ffffff;
-    margin-top: 12px;
+    font-weight: 300;
 }
 
 .topnav a:hover {
     color: gray;
     transition: .3s;
-    font-weight: 500;
 }
 
 .topnav img {
     width: 70px;
     margin: 0;
+    padding-top: 12px;
 }
 
 @media (min-width: 460px) {
@@ -859,8 +915,8 @@ a:hover .follow-img-1 {
     flex-direction: column;
     width: 100vw;
     background-color: #151515;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     color: #D5D5D5;
 }
 
@@ -870,18 +926,40 @@ a:hover .follow-img-1 {
 
 .footer a:hover {
     text-decoration: none;
-    color: gray;
+    opacity: .8;
     transition: .3s;
 }
 
+.foo-contact div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foo-contact img {
+    width: 38px;
+    padding-right: 12px;
+}
+
+.foo-desc h1 {
+    margin: 0;
+    font-variant-caps: all-petite-caps;
+    line-height: 0.5;
+}
+
+
 @media (min-width: 460px) {
     .footer {
-        height: 85vh;
+        height: 90vh;
     }
 
     .foo-desc h1 {
-        font-size: 76px;
-        padding-bottom: 20px;
+        font-size: 230px;
+        padding-bottom: 40px;
+    }
+
+    .foo-desc span {
+        font-size: 200px;
     }
 
     .foo-desc p {
@@ -904,8 +982,8 @@ a:hover .follow-img-1 {
     }
 
     .foo-contact a {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 26px;
+        margin-top: 16px;
     }
 
     .foo-links {
@@ -938,7 +1016,7 @@ a:hover .follow-img-1 {
     }
     
     .foo-desc h1 {
-        font-size: 42px;
+        font-size: 60px;
         padding-bottom: 20px;
     }
 
@@ -993,6 +1071,6 @@ a:hover .follow-img-1 {
 .copyright {
     font-size: 14px;
     font-weight: 200;
-    color: #7A7A7A;
-    opacity: .7;
+    color: #ffffff;
+    opacity: .5;
 }
