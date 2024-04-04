@@ -32,138 +32,111 @@
         </div>
     </div>
 
-    <div class="s-present-cont so-row">
-        <div class="s-present">
-            <p>services</p>
-            <h1>Launching something <span>new </span>or transforming something that <span>already work?</span></h1>
+    <div class="s-present so-row">
+        <div class="s-present-greet">
+            <p><span lang="en">/ hello</span><span lang="ru">/ обо мне</span></p>
+            <!-- <h1>Launching something <span class="h-color">new </span>or transforming something that <span class="h-color">already work?</span></h1> -->
+            <h1><span lang="en"></span><span lang="ru">Веб-дизайнер,<br>да и просто<br>хороший человек</span></h1>
         </div>
 
-        <div class="s-stages">
-            <img src="img/services.jpg">
-            <div class="s-stages-text-cont">
-                <!-- <h3>Stages of work</h3> -->
-                <h3>Four stages of work:</h3>
+        <div class="s-present-contact">
+            <a href="https://t.me/makotty">Telegram</a>
+            <a href="https://wa.me/79110180255">WhatsApp</a>
+            <a href="tel:+79110180255">+7 911 018 02 55</a>
+        </div>
 
-                <div class="s-list">
-                    <div class="s-stages-text">
-                        <div class="s-num">
-                            <p>1</p>
-                        </div>
-                        <h4>Brief</h4>
-                        <!-- <img src="img/arrow.svg"> -->
-                    </div>
-
-                    <div class="s-stages-text">
-                        <div class="s-num">
-                            <p>2</p>
-                        </div>
-                        <h4>Brainstorm & Analyse</h4>
-                    </div>
-
-                    <div class="s-stages-text">
-                        <div class="s-num">
-                            <p>3</p>
-                        </div>
-                        <h4>Design development</h4>
-                    </div>
-
-                    <div class="s-stages-text">
-                        <div class="s-num">
-                            <p>4</p>
-                        </div>
-                        <h4>Presentation</h4>
-                    </div>
-                </div>
-
-                <div class="s-stages-button-cont">
-                    <a href="tel:+79110180255">
-                        <button class="s-stages-button">GET IN TOUCH</button>
-                    </a>
-                </div>
-            </div>
+        <div class="s-img">
+            <img src="img/me.jpeg">
         </div>
     </div>
 
-    <div class="s-stages-all-services so-row">
-        <div class="s-all-text">
-            <h2>Services <span>I do offer</span></h2>
-            <p class="s-all-right">Some of the fields in which I stand out are UI/UX, branding, graphic and editorial design. I love clean typography, white spaces and minimalism. <br><br>If you're a startup looking for a designer or have some interesting ideas in mind, <br>get in touch.</p>
+    <div class="s-all-services so-row">
+        <h2 class="s-left"><span lang="en">/ Services I do offer</span><span lang="ru">/ Мои услуги</span></h2>
+
+        <div class="services">
+            <div class="s-card">
+                <div onclick="showService1()" id="myBtnSrv" class="s-card-name"> 
+                    <h2><span lang="en">Web Design</span><span lang="ru">Веб-дизайн</span></h2>
+                    <p id="plusminus1">+</p>
+                </div>
+
+                <div class="s-card-hid" id="more1">
+                    <p><span lang="en">Web design must blend end user’s needs with longer-term business goals, to create effective and rewarding user experiences.</span>
+                        <span lang="ru">Веб-дизайн должен сочетать конечные потребности пользователя с долгосрочными бизнес-целями, создавая эффективный и полезный пользовательский опыт.</span>
+                    </p>
+                    <h3><span lang="en">My capabilities:</span><span lang="ru">Я предлагаю:</span></h3>
+                    <ul>
+                        <li><span lang="en">Business, Event and Personal Websites</span><span lang="ru">Дизайн вебсайтов</span></li>
+                        <li><span lang="en">Mobile Apps</span><span lang="ru">Дизайн мобильных приложений</span></li>
+                        <li>eCommerce</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="s-card">
+                <div onclick="showService2()" id="myBtnSrv" class="s-card-name"> 
+                    <h2><span lang="en">Branding</span><span lang="ru">Брендинг</span></h2>
+                    <p id="plusminus2">+</p>
+                </div>
+
+                <div class="s-card-hid" id="more2">
+                    <p><span lang="en">The emotional and practical responses that audiences develop towards a brand are triggered by fundamental creative elements.</span>
+                        <span lang="ru">С помощью айдентики бренд формирует у потребителя свой желаемый образ, создаёт собственный отличительный код и рассказывает о себе. Фирменный стиль помогает клиенту узнавать бренд и замечать его продукты среди других.</span>
+                    </p>
+                    <h3><span lang="en">My capabilities:</span><span lang="ru">Я предлагаю:</span></h3>
+                    <ul>
+                        <li><span lang="en">Logo Design</span><span lang="ru">Дизайн логотипов</span></li>
+                        <li><span lang="en">Trademark Variations Guide</span><span lang="ru">Создание брендбуков</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="s-card">
+                <div onclick="showService3()" id="myBtnSrv" class="s-card-name"> 
+                    <h2><span lang="en">Graphic design</span><span lang="ru">Графический дизайн</span></h2>
+                    <p id="plusminus3">+</p>
+                </div>
+
+                <div class="s-card-hid" id="more3">
+                    <p><span lang="en">Graphic design help to communicate with personality, tone, and core messaging of a company. So graphic design is about a strategy.</span>
+                        <span lang="ru">Графический дизайн необходим для создания уникальных визуальных образов для продуктов и услуг, он помогает передавать и воспринимать информацию.</span> 
+                    </p>
+                    <h3><span lang="en">My capabilities:</span><span lang="ru">Я предлагаю:</span></h3>
+                    <ul>
+                        <li><span lang="en">Packaging design</span><span lang="ru">Дизайн упаковок</span></li>
+                        <li><span lang="en">Billboards and other signage</span><span lang="ru">Дизайн рекламных баннеров</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="s-card" style="margin-bottom: 15px">
+                
+                <div onclick="showService4()" id="myBtnSrv" class="s-card-name"> 
+                    <h2><span lang="en">Catalogs & Presentations</span><span lang="ru">Каталоги и презентации</span></h2>
+                    <p id="plusminus4">+</p>
+                </div>
+
+                <div class="s-card-hid" id="more4">
+                    <p><span lang="en">Company presentation is a good way to share contacts with customers. It will build trust in customers and set the business apart from others.</span>
+                        <span lang="ru">Презентация — отличные способ донести до аудитории информацию об объекте презентации в удобной форме. Презентация является одним из маркетинговых и PR инструментов.</span>
+                    </p>
+                    <h3><span lang="en">My capabilities:</span><span lang="ru">Я предлагаю:</span></h3>
+                    <ul>
+                        <li><span lang="en">Catalogs design</span><span lang="ru">Дизайн каталогов</span></li>
+                        <li><span lang="en">Presentation development</span><span lang="ru">Разработка презентаций</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="https://t.me/makotty">
+                <span lang="en">START YOUR PROJECT <span style="font-size: 28px;">↴</span></span><span lang="ru">НАЧАТЬ ПРОЕКТ <span style="font-size: 28px;">↴</span></span>
+            </a>
         </div>
+    </div>
 
-        <div class="s-cards">
-            <div class="s-card s-c-1">
-                <h2>Web Design</h2>
-                <p>Digital products are software applications that can be used on devices and can include consumer applications, websites and mobile apps.
-                    At its best digital product design will blend end user’s needs with longer-term business goals, to create effective and rewarding user experiences.
-                    <br><br><span>My capabilities:</span>
-                </p>
-                <ul>
-                    <li>UI and UX Design</li>
-                    <li>eCommerce</li>
-                    <li>Business, Event and Personal Websites</li>
-                    <li>Mobile Apps</li>
-                </ul>
-
-                <a href="tel:+79110180255">
-                    <div class="s-card-hide s-c-h-1">
-                        <p>START YOUR PROJECT</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="s-card s-c-2">
-                <h2>Branding</h2>
-                <p>A brand may include a company’s name, logo, visual identity and messaging, however a brand’s value is much greater than the sum of its parts. 
-                    The emotional and practical responses that audiences develop towards a brand are triggered by fundamental creative elements.
-                    <br><br><span>My capabilities:</span>
-                </p>
-                <ul>
-                    <li>Logo Design</li>
-                    <li>Trademark Variations Guide</li>
-                </ul>
-
-                <a href="tel:+79110180255">
-                    <div class="s-card-hide s-c-h-2">
-                        <p>START YOUR PROJECT</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="s-card s-c-3">
-                <h2>Graphic design</h2>
-                <p>Graphic design help to communicate with personality, tone, and core messaging of a company. So graphic design is about a strategy. 
-                    <br><br><span>My capabilities:</span>
-                </p>
-                <ul>
-                    <li>Packaging design</li>
-                    <li>Billboards and other signage</li>
-                </ul>
-
-                <a href="tel:+79110180255">
-                    <div class="s-card-hide s-c-h-3">
-                        <p>START YOUR PROJECT</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="s-card s-c-4">
-                <h2>Catalogs & Presentations</h2>
-                <p>Company presentation is a good way to share contacts with customers. 
-                    It will build trust in customers and set the business apart from others.
-                    <br><br><span>My capabilities:</span>
-                </p>
-                <ul>
-                    <li>Catalogs design</li>
-                    <li>Presentation development</li>
-                </ul>
-
-                <a href="tel:+79110180255">
-                    <div class="s-card-hide s-c-h-4">
-                        <p>START YOUR PROJECT</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <div class="img-cover">
+        <a href="/work">Explore cases</a>
+        <img src="img/assistent/8.jpg">
     </div>
 
     <div class="footer so-row">
@@ -203,6 +176,63 @@
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow-top.png"></button>
+
+    <script>
+        function showService1() {
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("plusminus1");
+        
+          if (moreText.style.display = "none") {
+            moreText.style.display = "block";
+            btnText.innerHTML = "-"; 
+          } else {
+            btnText.innerHTML = "+"; 
+            moreText.style.display = "none";
+          }
+        }
+
+        
+        function showService2() {
+          var moreText = document.getElementById("more2");
+          var btnText = document.getElementById("plusminus2");
+        
+          if (moreText.style.display = "none") {
+            moreText.style.display = "block";
+            btnText.innerHTML = "-"; 
+          } else {
+            btnText.innerHTML = "+"; 
+            moreText.style.display = "none";
+          }
+        }
+
+        
+        function showService3() {
+          var moreText = document.getElementById("more3");
+          var btnText = document.getElementById("plusminus3");
+        
+          if (moreText.style.display = "none") {
+            moreText.style.display = "block";
+            btnText.innerHTML = "-"; 
+          } else {
+            btnText.innerHTML = "+"; 
+            moreText.style.display = "none";
+          }
+        }
+
+        
+        function showService4() {
+          var moreText = document.getElementById("more4");
+          var btnText = document.getElementById("plusminus4");
+        
+          if (moreText.style.display = "none") {
+            moreText.style.display = "block";
+            btnText.innerHTML = "-"; 
+          } else {
+            btnText.innerHTML = "+"; 
+            moreText.style.display = "none";
+          }
+        }
+    </script>
 
     <script>
         AOS.init();

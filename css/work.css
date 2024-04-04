@@ -57,7 +57,7 @@
 @media (min-width: 460px) {
     .w-works {
         display: grid;
-        gap: 50px 15px;
+        gap: 45px 15px;
         grid-template-columns: 50% 50%;
         margin-bottom: 10vh;
     }
@@ -98,10 +98,14 @@
 
     .w-card h3 {
         color: #151515;
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 500;
         margin-bottom: 20px;
         line-height: 0.7;
+    }
+
+    .w-card a:hover {
+        text-decoration: none;
     }
 }
 
@@ -144,9 +148,11 @@
     }
 }
 
-/* .w-card img:hover {
-    transition: .5;
-    opacity: .92;
+/* .w-works-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 } */
 
 .w-works-text p {

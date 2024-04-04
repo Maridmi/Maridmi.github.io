@@ -43,7 +43,7 @@
 
     .contact-info {
         width: 45vw;
-        min-height: 400px;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
