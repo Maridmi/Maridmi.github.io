@@ -525,6 +525,10 @@ a:hover {
     color: #ff6832;
 }
 
+.explore-anno a:hover {
+    color: #ff6832 !important;
+}
+
 .explore-cont a {
     color: #000;
 }
