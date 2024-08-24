@@ -864,12 +864,12 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.case-d-text {
-    width: 72%;
-}
+/* .case-d-text {
+    width: 70%;
+} */
 
 .case-d h2 {
-    margin-top: 17vh;
+    margin-top: 145px;
     font-size: 160px;
     line-height: .6;
     margin-bottom: 35px;
@@ -878,10 +878,17 @@ a:hover {
 .case-d-text-all {
     display: flex;
     flex-direction: row;
+    width: 80%;
+}
+
+.case-d-desc-area {
+    width: 5%;
+    margin-right: 90px;
 }
 
 .case-d-desc-y {
-    margin-right: 150px;
+    width: 5%;
+    margin-right: 90px;
 }
 
 .case-d-desc {
