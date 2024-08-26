@@ -123,9 +123,9 @@
 
     .w-name {
         color: #151515;
-        font-size: 45px;
+        font-size: 85px;
         font-weight: 500;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
     }
 
     .w-img {
@@ -137,23 +137,16 @@
 
     .w-card h3 {
         color: #151515;
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        line-height: 1;
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        line-height: 1.1;
     }
 
     .btn {
         margin-top: 8px;
     }
 }
-
-/* .w-works-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .w-works-text p {
     color: #151515;

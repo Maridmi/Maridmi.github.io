@@ -625,24 +625,22 @@ a:hover {
 
 
 /* ##################### FOOTER ############################### */
-.footer {
+footer {
     width: 100vw;
     background-color: #ff6832;
     color: #092321;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.footer a {
-    /* color: #D5D5D5; */
+footer a {
     color: #092321;
 }
 
-.footer a:hover {
+footer a:hover {
     opacity: .8;
     transition: .3s;
-}
-
-.foo-cont {
-    width: 100%;
 }
 
 .foo-contact img {
@@ -653,19 +651,51 @@ a:hover {
 .foo-desc h1 {
     margin: 0;
     font-variant-caps: all-petite-caps;
-    line-height: 0.5;
+}
+
+.foo-text p, .foo-text a {
+    font-weight: 500;
+    font-variant-caps: all-petite-caps;
+    line-height: .9;
+}
+
+.foo-links {
+    display: flex;
+    flex-direction: column;
 }
 
 .copyright {
     font-weight: 400;
-    padding-bottom: 10px;
     font-variant-caps: all-petite-caps;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #f95f27;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 40px;
+}
+  
+#myBtn:hover {
+    background-color: #ff751f;
+}
+
+  #myBtn img {
+    width: 25px;
+    height: 25px;
 }
 
 
 @media (min-width: 460px) {
-    .footer {
-        min-height: 86vh;
+    footer {
+        min-height: 60vh;
     }
 
     .foo-desc {
@@ -689,34 +719,23 @@ a:hover {
     .foo-contact {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-left: 40%;
     }
 
     .foo-text {
         display: flex;
         flex-direction: row;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 
     .foo-text a {
         font-size: 24px;
-        font-weight: 500;
-        font-variant-caps: all-petite-caps;
-        line-height: .9;
         margin: 0 0 5px 0;
     }
 
     .foo-text p {
         font-size: 24px;
-        font-weight: 500;
-        font-variant-caps: all-petite-caps;
         width: 160px;
-        line-height: .9;
-    }
-
-    .foo-links {
-        display: flex;
-        flex-direction: column;
     }
 
     .foo-behance {
@@ -748,105 +767,68 @@ a:hover {
     }
 
     .copyright h1 {        
-        /* font-size: calc(2em + 10vw); */
         font-size: 170px;
-        line-height: .5;
         margin: 0;
+        padding-bottom: 40px;
     }
 
-
-
     #myBtn {
-        display: none;
-        position: fixed;
         bottom: 30px;
         right: 20px;
-        z-index: 99;
-        font-size: 16px;
-        border: none;
-        outline: none;
-        background-color: #f95f27;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 40px;
-      }
-      
-      #myBtn:hover {
-        background-color: #ff751f;
-      }
-    
-      #myBtn img {
-        width: 25px;
-        height: 25px;
-      }
+    }
+
+    .foo-mob {
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
-    .footer {
-        height: 90vh;
-        /* min-height: 100%; */
+    footer {
+        height: 80vh;
     }
     
     .foo-desc h1 {
-        font-size: 60px;
-        padding-bottom: 20px;
-    }
-
-    .foo-desc p {
-        font-size: 14px;
-        font-weight: 200;
-    }
-
-    .foo-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        margin-bottom: 10px;
+        font-size: 70px;
+        margin: 40px 0 60px 0;
+        line-height: .7;
     }
 
     .foo-contact {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         margin-bottom: 30px;
     }
 
-    .foo-contact a {
-        font-size: 28px;
+    .foo-text a {
+        font-size: 34px;
+        margin: 0 0 5px 0;
         margin-bottom: 15px;
     }
 
-    .foo-links {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .foo-links p {
-        color: #7A7A7A;
+    .foo-text p {
         font-size: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
-    .foo-links-row {
-        display: flex;
-        flex-direction: column;
-        font-size: 16px;
+    .foo-text {
+        margin-bottom: 50px;
     }
 
-    .foo-links-row a {
-        margin: 15px 0 0 0;
-        color: #D5D5D5;
-    }
-
-    .foo-behance {
+    .foo-behance, .foo-desk {
         display: none;
     }
 
+    .copyright h1 {        
+        font-size: 100px;
+        margin: 0;
+        padding-bottom: 40px;
+    }
 
     #myBtn {
-        display: none;
+        bottom: 20px;
+        right: 15px;
     }
 }
 
