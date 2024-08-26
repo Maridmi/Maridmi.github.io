@@ -632,6 +632,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 20px;
 }
 
 footer a {
@@ -695,7 +696,7 @@ footer a:hover {
 
 @media (min-width: 460px) {
     footer {
-        min-height: 60vh;
+        min-height: 55vh;
     }
 
     .foo-desc {
@@ -766,7 +767,7 @@ footer a:hover {
         text-align: end;
     }
 
-    .copyright h1 {        
+    h1.copyright {        
         font-size: 170px;
         margin: 0;
         padding-bottom: 40px;
@@ -820,7 +821,7 @@ footer a:hover {
         display: none;
     }
 
-    .copyright h1 {        
+    h1.copyright {        
         font-size: 100px;
         margin: 0;
         padding-bottom: 40px;
