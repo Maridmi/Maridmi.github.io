@@ -841,8 +841,6 @@ footer a:hover {
 .case-d {
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     padding-bottom: 20px;
 }
 
@@ -924,6 +922,11 @@ footer a:hover {
 }
 
 @media screen and (min-width: 460px){
+    .case-d {
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
     .case-d h2 {
         margin-top: 145px;
         font-size: 160px;
@@ -952,9 +955,17 @@ footer a:hover {
     .prevnext a {
         font-size: 110px;
     }
+
+    .prev-mob {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 460px){
+    .case-d {
+        flex-direction: column;
+    }
+
     .case-d h2 {
         margin-top: 145px;
         font-size: 100px;
@@ -962,22 +973,19 @@ footer a:hover {
 
     .case-d-text-all {
         display: grid;
-        gap: 10px;
-        grid-template-columns: auto auto;
+        /* gap: 10px; */
+        grid-template-columns: 50% 50%;
         width: 100%;
     }
       
     .case-d-desc {
-        grid-column: 1 / 2;
-        grid-row: 2;
-    }
-    
-    .case-d-desc {
-        width: 65%;
+        grid-column: 1 / 3;
+        /* grid-row: 2; */
     }
 
     .prevnext a {
-        font-size: 80px;
+        font-size: 20px;
+        margin: 30px 0 20px 0;
     }
 }
 
