@@ -1,13 +1,14 @@
 .s-present {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     margin-top: 0;
 }
 
+.s-present-greet {
+    width: 100%;
+}
+
 .s-present p {
-    font-size: 22px;
     line-height: 0.7;
     font-variant-caps: all-petite-caps;
 }
@@ -15,168 +16,60 @@
 .s-present h1 {
     color: #000;
     font-variant-caps: all-petite-caps;
+    margin: 0;
 }
 
-@media (min-width: 460px) {
-    .s-present {
-        height: 96vh;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-
-    .s-present-greet {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    .s-present h1 {
-        width: 65vw;
-        font-size: 220px;
-        margin: 0;
-    }
-
-    .s-present-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    .s-present-contact a {
-        color: #000;
-        font-size: 30px;
-        font-variant-caps: all-petite-caps;
-    }
-
-    .s-img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: -1;
-    }
-
-    .s-img img {
-        min-width: 350px;
-        width: 30vw;
-        height: 75vh;
-        object-fit: cover; 
-    }
+.s-present-contact {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 460px) { 
-    .s-present {
-        height: 100vh;
-    }
-
-    .s-present {
-        padding-top: 20vh;
-    }
-
-    .s-present h1 {
-        width: 100%;
-        font-size: 74px;
-    }
+.s-present-contact a {
+    color: #000;
+    font-variant-caps: all-petite-caps;
 }
 
 .s-all-services {
     width: 100vw;
-    margin-top: 60px;
-    margin-bottom: 180px;
 }
 
 .s-left  {
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
 }
 
-@media (min-width: 460px) {
-    .s-all-services {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .s-left {
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 1;
-        margin: 0;
-        width: 50vw;
-    }
-
-    .s-card {
-        border-bottom: 1px solid #cdcdcd;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 25px 0;
-        margin-right: 20px;
-        width: 50vw;
-    }
-
-    .s-card-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        cursor: pointer;
-    }
-
-    #more1, #more2, #more3, #more4 {
-        display: none;
-        transition: .5s;
-    }
+.s-card {
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-@media (max-width: 460px) {
-    .s-card {
-        width: 100%;
-        border-bottom: 1px solid #cdcdcd;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: relative;
-        margin-bottom: 20px;
-    }
-    
-    .s-all-services {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 80px;
-        margin-bottom: 100px;
-    }
+.s-card-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
 
-    .s-left {
-        font-size: 52px;
-        font-weight: 500;
-        line-height: 1;
-        margin-bottom: 20px;
-    }
+#more1, #more2, #more3, #more4 {
+    display: none;
+    transition: .5s;
 }
 
 .s-card h2 {
-    font-size: 36px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin: 0;
     line-height: .5;
-    /* font-variant-caps: normal; */
 }
 
 .s-card-name p {
-    font-size: 40px !important;
     margin: 0 !important;
     line-height: .1 !important;
 }
@@ -216,7 +109,6 @@
 
 .img-cover {
     width: 100%;
-    height: 70vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -233,11 +125,7 @@
 .img-cover a {
     color: #fff;
     z-index: 2;
-    font-size: 30px;
     font-variant-caps: all-petite-caps;
-    background-color: #00000098;
-    opacity: 0;
-    transition: .3s;
     width: 100%;
     height: 100%;
     display: flex;
@@ -245,6 +133,179 @@
     justify-content: center;
 }
 
-.img-cover a:hover {
-    opacity: 1;
+@media (min-width: 460px) {
+    .s-present {
+        height: 96vh;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .s-present-greet {
+        padding-bottom: 30px;
+    }
+    
+    .s-present p {
+        font-size: 22px;
+    }
+
+    .s-present h1 {
+        width: 65vw;
+        font-size: 220px;
+    }
+
+    .s-present-contact {
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .s-present-contact a {
+        font-size: 30px;
+    }
+
+    .s-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .s-img img {
+        min-width: 350px;
+        width: 30vw;
+        height: 75vh;
+        object-fit: cover; 
+    }
+
+    .s-all-services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-bottom: 180px;
+    }
+
+    .s-left {
+        font-size: 22px;
+        width: 50vw;
+    }
+
+    .s-card {
+        padding: 25px 0;
+        margin-right: 20px;
+        width: 50vw;
+    }
+    
+    .s-card h2 {
+        font-size: 36px;
+    }
+    
+    .s-card-name p {
+        font-size: 40px !important;
+    }
+
+    .img-cover {
+        height: 70vh;
+    }
+    
+    .img-cover a {
+        font-size: 30px;
+        opacity: 0;
+        transition: .3s;
+        background-color: #00000098;
+    }
+    
+    .img-cover a:hover {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 460px) { 
+    .s-present {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .s-present-greet {
+        margin-top: 100px;
+    }
+    
+    .s-present p {
+        font-size: 22px;
+    }
+
+    .s-present h1 {
+        font-size: 120px;
+    }
+
+    .s-present-contact {
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .s-present-contact a {
+        font-size: 25px;
+    }
+
+    .s-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .s-img img {
+        min-width: 150px;
+        width: 70vw;
+        height: 50vh;
+        object-fit: cover; 
+        position: absolute;
+        top: 120px;
+    }
+
+    .s-all-services {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+
+    .s-left {
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+
+    .s-card {
+        padding: 25px 0;
+        margin-right: 20px;
+    }
+
+    .s-card h2 {
+        font-size: 36px;
+        line-height: 1;
+    }
+    
+    .s-card-name p {
+        font-size: 40px !important;
+    }
+
+    .img-cover {
+        height: 35vh;
+    }
+    
+    .img-cover a {
+        font-size: 35px;
+        opacity: 1;
+        background-color: #0000007a;
+    }
 }
