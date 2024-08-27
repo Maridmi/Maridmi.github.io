@@ -28,7 +28,6 @@
 
 .btn {
     border: 1px solid rgb(210, 210, 210);
-    /* background-color: #FCFAF8; */
     background-color: #fff;
     border-radius: 30px;
     outline: none !important;
@@ -171,7 +170,7 @@
         color: #151515;
         font-size: 22px;
         font-weight: 500;
-        margin-bottom: 8px;
+        margin: 14px 0 6px 0;
         line-height: 1.3;
     }
 

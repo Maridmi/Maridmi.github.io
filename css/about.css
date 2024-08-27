@@ -228,7 +228,7 @@
 
 @media (max-width: 460px) { 
     .s-present {
-        height: 100vh;
+        height: 92vh;
         flex-direction: column;
         justify-content: flex-end;
     }
@@ -242,7 +242,7 @@
     }
 
     .s-present h1 {
-        font-size: 120px;
+        font-size: 105px;
     }
 
     .s-present-contact {
@@ -281,7 +281,7 @@
     }
 
     .s-left {
-        font-size: 26px;
+        font-size: 22px;
         margin-bottom: 35px;
     }
 

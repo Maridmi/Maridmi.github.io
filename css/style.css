@@ -212,16 +212,15 @@ a:hover {
     }
 }
 
-@media (max-width: 1050px) {
-    .greetings-text p {
+@media (max-width: 460px) {
+    .mob-none {
         display: none;
     }
-}
 
-@media (max-width: 460px) {
     .greetings {
         width: 100vw;
-        height: 94vh;
+        height: 95vh;
+        padding-bottom: 60px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -230,9 +229,12 @@ a:hover {
     }
 
     .greetings h1 {
-        /* font-size: 95px; */
         font-size: calc(3em + 12vw);
         margin: 0;
+    }
+
+    .greetings-text p, #invisibles {
+        display: none;
     }
 }
 
@@ -380,6 +382,7 @@ a:hover {
         opacity: .9;
         margin: 0 0 0 30px;
         display: inline-block;
+        filter: grayscale(100%);
     }
 }
 
@@ -473,22 +476,13 @@ a:hover {
     .more-works {
         display: flex;
         flex-direction: column;
-        padding-bottom: 60px;
-    }
-
-    .more-works-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 40px;
     }
 
     .more-works-card {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .more-works-card img {
@@ -502,6 +496,11 @@ a:hover {
         font-size: 24px;
         line-height: 0.9;
     }
+
+    .more-works-text button {
+        /* width: 80px; */
+        text-align: center;
+    }
 }
 
 .more-works-text p {
@@ -511,7 +510,6 @@ a:hover {
 .explore-more {
     width: 100vw;
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .explore-anno {
@@ -566,6 +564,10 @@ a:hover {
 }
 
 @media (min-width: 460px) {
+    .explore-more {
+        padding-bottom: 100px;
+    }
+
     .explore-work h1 {
         font-size: 95px;
         transition: .6s;
@@ -596,9 +598,17 @@ a:hover {
 }
 
 @media (max-width: 460px) {
+    .explore-more {
+        padding-bottom: 50px;
+    }
+
+    .explore-anno p, .explore-anno a {
+        margin: 0;
+    }
+
     .explore-work h1 {
-        font-size: 30px;
-        width: 70%;
+        font-size: 40px;
+        width: 80%;
     }
 
     .exp {
@@ -643,11 +653,6 @@ footer a {
 footer a:hover {
     opacity: .8;
     transition: .3s;
-}
-
-.foo-contact img {
-    width: 36px;
-    padding-right: 10px;
 }
 
 .foo-desc h1 {
@@ -724,6 +729,11 @@ footer a:hover {
         margin-left: 40%;
     }
 
+    .foo-contact img {
+        width: 36px;
+        padding-right: 10px;
+    }
+
     .foo-text {
         display: flex;
         flex-direction: row;
@@ -779,19 +789,20 @@ footer a:hover {
         right: 20px;
     }
 
-    .foo-mob {
+    .foo-mob, .copyright-mob, .foo-links-mob {
         display: none;
     }
 }
 
 @media (max-width: 460px) {
     footer {
-        height: 80vh;
+        /* height: 70vh; */
+        padding: 20px;
     }
     
     .foo-desc h1 {
         font-size: 70px;
-        margin: 40px 0 60px 0;
+        margin: 20px 0 40px 0;
         line-height: .7;
     }
 
@@ -815,17 +826,24 @@ footer a:hover {
     }
 
     .foo-text {
-        margin-bottom: 50px;
+        margin-bottom: 28px;
     }
 
     .foo-behance, .foo-desk {
         display: none;
     }
 
-    h1.copyright {        
-        font-size: 100px;
-        margin: 0;
-        padding-bottom: 40px;
+    .copyright {
+        display: none;
+    }
+
+    p.copyright-mob {        
+        font-size: 18px;
+    }
+
+    .foo-contact img {
+        width: 60px;
+        padding: 7px;
     }
 
     #myBtn {
